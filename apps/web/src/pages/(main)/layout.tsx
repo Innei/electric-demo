@@ -1,14 +1,13 @@
-import { Outlet, redirect } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
-import { getSession } from '~/api/session'
 import { MainLayoutHeader } from '~/modules/main-layout/MainLayoutHeader'
 
 export const loader = async () => {
-  const session = await getSession()
+  // const session = await getSession()
 
-  if (!session) {
-    return redirect('/login')
-  }
+  // if (!session) {
+  //   return redirect('/login')
+  // }
 
   return null
 }

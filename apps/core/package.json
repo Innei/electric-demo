@@ -15,12 +15,7 @@
     "prod": "cross-env NODE_ENV=production pm2-runtime start ecosystem.config.js",
     "prod:pm2": "cross-env NODE_ENV=production pm2 restart ecosystem.config.js",
     "prod:stop": "pm2 stop ecosystem.config.js",
-    "prod:debug": "cross-env NODE_ENV=production nest start --debug --watch",
-    "backend:start": "electric-sql start --with-postgres",
-    "backend:stop": "electric-sql stop",
-    "backend:up": "electric-sql start --with-postgres --detach",
-    "backend:down": "electric-sql stop --remove",
-    "electric:start": "electric-sql start"
+    "prod:debug": "cross-env NODE_ENV=production nest start --debug --watch"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "1.4.1",
@@ -75,7 +70,6 @@
     "@types/lodash": "4.17.6",
     "@types/supertest": "6.0.2",
     "@types/ua-parser-js": "0.7.39",
-    "electric-sql": "0.12.1",
     "fastify": "^4.28.1",
     "ioredis": "^5.4.1",
     "zx": "8.1.4"
