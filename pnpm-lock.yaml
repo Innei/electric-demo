@@ -391,8 +391,8 @@ importers:
         specifier: 0.7.1
         version: 0.7.1(eslint@9.8.0)(optionator@0.9.4)(typescript@5.5.4)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.3))
       vite-tsconfig-paths:
-        specifier: 4.3.2
-        version: 4.3.2(typescript@5.5.4)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.3))
+        specifier: 5.0.1
+        version: 5.0.1(typescript@5.5.4)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.3))
 
   drizzle:
     dependencies:
@@ -8148,6 +8148,14 @@ packages:
 
   vite-tsconfig-paths@4.3.2:
     resolution: {integrity: sha512-0Vd/a6po6Q+86rPlntHye7F31zA2URZMbH8M3saAZ/xR9QoGN/L21bxEGfXdWmFdNkqPpRdxFT7nmNe12e9/uA==}
+    peerDependencies:
+      vite: '*'
+    peerDependenciesMeta:
+      vite:
+        optional: true
+
+  vite-tsconfig-paths@5.0.1:
+    resolution: {integrity: sha512-yqwv+LstU7NwPeNqajZzLEBVpUFU6Dugtb2P84FXuvaoYA+/70l9MHE+GYfYAycVyPSDYZ7mjOFuYBRqlEpTig==}
     peerDependencies:
       vite: '*'
     peerDependenciesMeta:
@@ -17231,6 +17239,17 @@ snapshots:
       typescript: 5.5.4
 
   vite-tsconfig-paths@4.3.2(typescript@5.5.4)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.3)):
+    dependencies:
+      debug: 4.3.6
+      globrex: 0.1.2
+      tsconfck: 3.1.1(typescript@5.5.4)
+    optionalDependencies:
+      vite: 5.3.3(@types/node@20.14.10)(terser@5.31.3)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+
+  vite-tsconfig-paths@5.0.1(typescript@5.5.4)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.3)):
     dependencies:
       debug: 4.3.6
       globrex: 0.1.2
